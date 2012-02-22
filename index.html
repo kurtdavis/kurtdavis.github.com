@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fix those peskey images in FML listings</title>
+
+		<style type="text/css">
+			body {
+				font: 14pt/1.3 Arial;
+			}
+
+			h1, h2, h3 { font-weight: normal; text-align: center; }
+
+			#wrapper {
+				width: 800px;
+				margin: 0 auto;
+			}
+
+			li {
+				margin: 5px 0;
+			}
+
+			#linkBtn {
+				margin-top: -10px;
+				display: block;
+				width: 498px;
+				height: 176px;
+				margin: 0 auto;
+				background: url(button.png) no-repeat;
+				text-indent: -99999px;
+				overflow: hidden;
+			}
+
+			#footer {
+				text-align: center;
+			}
+
+			a img { border: none; }
+		</style>
+	</head>
+
+	<body>
+		<div id="wrapper">
+
+			<a id="linkBtn" href="javascript:var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';setTimeout(function(){$('img').closest('a').prependTo('body').each(function(){$('body').append('<img src=\"'+this.href+'\"/>');});$('div,table').remove()},1200);void(0);" title="ListFixImg">ListingFix</a> 
+
+			<p class="none-ie"><a href="javascript:var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';setTimeout(function(){$('img').closest('a').prependTo('body').each(function(){$('body').append('<img src=\"'+this.href+'\"/>');});$('div,table').remove()},1200);void(0);">Drag this bookmarklet to your bookmarks bar or a tab</a></p>
+
+<!--[if IE]>
+<p class="ie-version">Right click the green button and choose "Add to favorites" (yes, it's safe).</p>
+<![endif]-->
+
+			<p> Sometimes, depending on connection speed, you may need to click the link twice. </p>
+
+
+		<div id="footer"> 
+
+			<p> Alpha ver: Kurt Davis -- kewtec, inc.</p>
+			<p>Source at: <a href="https://github.com/kurtdavis/fmlslistings">https://github.com/kurtdavis/fmlslistings</a></p>
+<!--
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-xxxx-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		 })();
+	 </script>
+	 -->
+		</div>
+	</body>
+</html>

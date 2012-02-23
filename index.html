@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
-		<title>Fix those peskey images in FML listings</title>
+		<title>Fix those peskey images in FMLS listings</title>
 
 		<style type="text/css">
 			body {
 				font: 14pt/1.3 Arial;
+				background-color: #C0D0D0;
 			}
 
 			h1, h2, h3 { font-weight: normal; text-align: center; }
@@ -13,6 +14,8 @@
 			#wrapper {
 				width: 800px;
 				margin: 0 auto;
+				padding: 20px;
+				background-color: #fff;
 			}
 
 			li {
@@ -22,18 +25,29 @@
 			#linkBtn {
 				/*margin-top: -10px;*/
 				display: block;
-				width: 498px;
-				height: 176px;
+				width: 228px;
+				height: 36px;
 				margin: 0 auto;
 				text-align: center;
-				vertical-align: center;
+				vertical-align: bottom;
+				background-color: #C0D0D0;
 				/*background: url(button.png) no-repeat;*/
 				/*text-indent: -99999px;*/
 				overflow: hidden;
+				font-size: .8em;
+				font-weight: bold;
+
 			}
 
 			#footer {
 				text-align: center;
+				font-size: .8em;
+				color: #A0B0B0;
+			}
+			code pre {
+				background-color: #D0D0D0;
+				padding: 20px 0 20px 0;
+				font-size: .6em;
 			}
 
 			a img { border: none; }
@@ -43,13 +57,17 @@
 	<body>
 		<div id="wrapper">
 
+			<p>Drag this link into your bookmarks or right click and add it.</p>
 			<a id="linkBtn" href="javascript:var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';setTimeout(function(){$('img').closest('a').prependTo('body').each(function(){$('body').append('<img src=%22'+this.href+'%22/>');});$('div,table').remove()},1200);void(0);" title="ListFixImg">ListingFix</a> 
 
+			<p>Or copy past this as a link:</p>
 			<code>
-				![CDATA[
-				javascript:var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';setTimeout(function(){$('img').closest('a').prependTo('body').each(function(){$('body').append('<img src="'+this.href+'"/>');});$('div,table').remove()},1200);void(0);
-				]]
+				<pre>javascript:var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';setTimeout(function(){$('img').closest('a').prependTo('body').each(function(){$('body').append('<img src="'+this.href+'"/>');});$('div,table').remove()},1200);void(0);</pre>
+				<!-- ![CDATA[ ]] -->
 			</code> 
+
+			<br />
+			<br />
 <!--[if IE]>
 <p class="ie-version">Right click the green button and choose "Add to favorites" (yes, it's safe).</p>
 <![endif]-->
@@ -61,6 +79,7 @@
 
 			<p> Alpha ver: Kurt Davis -- kewtec, inc.</p>
 			<p>Source at: <a href="https://github.com/kurtdavis/kurtdavis.github.com">github</a></p>
+		</div>
 	 <script type="text/javascript">
 		 var _gaq = _gaq || [];
 		 _gaq.push(['_setAccount', 'UA-29425619-1']);
@@ -72,6 +91,5 @@
 		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 	</script>
-		</div>
 	</body>
 </html>

@@ -11,22 +11,19 @@
 
 			h1, h2, h3 { font-weight: normal; text-align: center; }
 
-			#wrapper {
-				width: 800px;
-				margin: 0 auto;
-				padding: 20px;
-				background-color: #fff;
-			}
-
 			li {
 				margin: 5px 0;
+			}
+			aside {
+				font-size: .6em;
+				color: #444;
 			}
 
 			#linkBtn {
 				/*margin-top: -10px;*/
 				display: block;
 				width: 228px;
-				height: 36px;
+				height: 2em;
 				margin: 0 auto;
 				text-align: center;
 				vertical-align: bottom;
@@ -37,6 +34,16 @@
 				font-size: .8em;
 				font-weight: bold;
 
+				background-image: -webkit-gradient(linear, left top, left bottom, from(#C0D0D0), to(#A0B0B0)); 
+				background-image: -webkit-linear-gradient(top, #C0D0D0, #A0B0B0); 
+				background-image:    -moz-linear-gradient(top, #C0D0D0, #A0B0B0); 
+				background-image:     -ms-linear-gradient(top, #C0D0D0, #A0B0B0); 
+				background-image:      -o-linear-gradient(top, #C0D0D0, #A0B0B0); 
+
+				border-radius: 10px;
+				-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+				-moz-box-shadow:    0px 0px 8px rgba(0,0,0,0.3);
+				box-shadow:         0px 0px 8px rgba(0,0,0,0.3);
 			}
 
 			#footer {
@@ -50,17 +57,95 @@
 				font-size: .6em;
 			}
 
+			a { text-decoration: none; }
 			a img { border: none; }
+
+			.wrapper {
+				margin: 50px auto;
+				padding: 20px;
+				width: 880px;
+				height: 390px;
+				background: white;
+				border-radius: 10px;
+				-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+				-moz-box-shadow:    0px 0px 8px rgba(0,0,0,0.3);
+				box-shadow:         0px 0px 8px rgba(0,0,0,0.3);
+				position: relative;
+				z-index: 90;
+			}
+			.layered-paper {
+				background: #eee;
+				box-shadow:
+				0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
+				0 10px 0 -5px #eee, /* The second layer */
+				0 10px 1px -4px rgba(0,0,0,0.15); /* The second layer shadow */
+			}
+
+			.ribbon-wrapper-green {
+				width: 85px;
+				height: 88px;
+				overflow: hidden;
+				position: absolute;
+				top: -3px;
+				right: -3px;
+			}
+
+			.ribbon-green {
+				font: bold 15px Sans-Serif;
+				color: #333;
+				text-align: center;
+				text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+				-webkit-transform: rotate(45deg);
+				-moz-transform:    rotate(45deg);
+				-ms-transform:     rotate(45deg);
+				-o-transform:      rotate(45deg);
+				position: relative;
+				padding: 7px 0;
+				left: -5px;
+				top: 15px;
+				width: 120px;
+				background-color: #BFDC7A;
+				background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45)); 
+				background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45); 
+				background-image:    -moz-linear-gradient(top, #BFDC7A, #8EBF45); 
+				background-image:     -ms-linear-gradient(top, #BFDC7A, #8EBF45); 
+				background-image:      -o-linear-gradient(top, #BFDC7A, #8EBF45); 
+				color: #6a6340;
+				-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+				-moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+				box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+			}
+
+			.ribbon-green:before, .ribbon-green:after {
+				content: "";
+				border-top:   3px solid #6e8900;   
+				border-left:  3px solid transparent;
+				border-right: 3px solid transparent;
+				position:absolute;
+				bottom: -3px;
+			}
+
+			.ribbon-green:before {
+				left: 0;
+			}
+			.ribbon-green:after {
+				right: 0;
+			}
+
+
 		</style>
 	</head>
 
 	<body>
-		<div id="wrapper">
-
+		<div class="wrapper layered-paper">
+			<div class="ribbon-wrapper-green"><div class="ribbon-green">
+					<a href="https://github.com/kurtdavis/kurtdavis.github.com">GitHub</a>
+				</div></div>
 			<p>Drag this link into your bookmarks or right click and add it.</p>
 			<a id="linkBtn" href="javascript:var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';setTimeout(function(){$('img').closest('a').prependTo('body').each(function(){$('body').append('<img src=%22'+this.href+'%22/>');});$('div,table').remove()},1200);void(0);" title="ListFixImg">ListingFix</a> 
+			<aside>Refresh page if you accidentally click it. ;)</aside>
 
-			<p>Or copy past this as a link:</p>
+			<p>Or copy paste this as a link:</p>
 			<code>
 				<pre>javascript:var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';setTimeout(function(){$('img').closest('a').prependTo('body').each(function(){$('body').append('<img src="'+this.href+'"/>');});$('div,table').remove()},1200);void(0);</pre>
 				<!-- ![CDATA[ ]] -->
